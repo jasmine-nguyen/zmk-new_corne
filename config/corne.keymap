@@ -43,6 +43,29 @@
 									= <&macro_tap &kp N6 &kp N5 &kp N1 &kp N0 &kp J &kp A &kp S
 										&kp N &kp G &kp ASTRK &kp AT>;
 					};
+					m2: m2 {
+							compatible = "zmk,behavior-macro";
+							#binding-cells = <0>;
+							bindings //ngockieutrang.nguyen@anz.com
+									= <&macro_tap &kp N &kp G &kp O &kp C &kp K &kp I &kp E &kp U
+										&kp T &kp R &kp A &kp N &kp G &kp DOT
+										&kp N &kp G &kp U &kp Y &kp E &kp N
+										&kp AT &kp A &kp N &kp Z
+										&kp DOT &kp C &kp O &kp M>;
+					};
+					m3: m1 {
+							compatible = "zmk,behavior-macro";
+							#binding-cells = <0>;
+							bindings
+									= <&macro_tap &kp N &kp G &kp U &kp Y &kp E &kp N &kp N1 &kp N8>;
+					};
+			    m4: m4 {
+							compatible = "zmk,behavior-macro";
+							#binding-cells = <0>;
+							bindings
+									= <&macro_tap &kp N2 &kp N5 &kp N1 &kp N2
+										&kp N2 &kp N0 &kp N1 &kp N5>;
+					};
     		};
         mmv {
             acceleration-exponent = <1>;      // 1
@@ -121,7 +144,7 @@
             display-name = "Fn";
             bindings = <
 &trans  &kp F1      						&kp F2      					&kp F3      &kp F4     	&kp F5      &mmv MOVE_UP 		 &kp F6       &kp F7     	&kp F8       &kp F9      &kp F10				&trans
-&trans  &m0 										&m1   								&none   		&none				&none    		&mmv MOVE_DOWN   &kp K_PP 		&kp K_PREV  &kp K_NEXT   &kp K_MUTE  &kp K_VOL_UP 	&kp K_VOL_DN
+&trans  &m0 										&m1   								&m2   			&m3					&m4    			&mmv MOVE_DOWN   &kp K_PP 		&kp K_PREV  &kp K_NEXT   &kp K_MUTE  &kp K_VOL_UP 	&kp K_VOL_DN
 &trans  &kp LG(LS(NUMBER_3)) 		&kp LG(LS(NUMBER_4))  &none  			&none     	&none    		&mmv MOVE_LEFT   &none       	&none     	&trans  		 &trans   	 &trans 				&none
                     						&kp C_MUTE  					&trans      &mo 3     	&trans      &mmv MOVE_RIGHT  &trans       &trans     	&trans
                                                                    											  &mkp LCLK
