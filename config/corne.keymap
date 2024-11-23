@@ -46,7 +46,7 @@
 					m2: m2 {
 							compatible = "zmk,behavior-macro";
 							#binding-cells = <0>;
-							bindings //ngockieutrang.nguyen@anz.com
+							bindings
 									= <&macro_tap &kp N &kp G &kp O &kp C &kp K &kp I &kp E &kp U
 										&kp T &kp R &kp A &kp N &kp G &kp DOT
 										&kp N &kp G &kp U &kp Y &kp E &kp N
@@ -65,6 +65,12 @@
 							bindings
 									= <&macro_tap &kp N2 &kp N5 &kp N1 &kp N2
 										&kp N2 &kp N0 &kp N1 &kp N5>;
+					};
+					mehta: mehta{
+						compatible = "zmk,behavior-macro";
+						#binding-cells = <0>;
+						bindings
+							= <&macro_press &kp LCTRL &kp LSHFT &kp LALT>;
 					};
     		};
         mmv {
@@ -101,11 +107,11 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC    			&kp Q  &kp W      &kp E     &kp R  &kp T          &kp UP_ARROW     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp CAPS				&kp A  &kp S      &kp D     &kp F  &kp G          &kp DOWN_ARROW   &kp H        &kp J  &kp K      &kp L    &td0      &td1
-&kp LCTRL  			&kp Z  &kp X      &kp C     &kp V  &kp B          &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-									     &kp ENTER  &kp LGUI 	&mo 1  &mt LSHFT ENTER&kp RIGHT_ARROW  &kp SPACE    &mo 2  &kp RMETA
-                                                             			&kp ENTER
+&kp ESC    			&kp Q  &kp W      &kp E         &kp R  &kp T           &kp UP_ARROW     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp CAPS				&kp A  &kp S      &kp D         &kp F  &kp G           &kp DOWN_ARROW   &kp H        &kp J  &kp K      &kp L    &td0      &td1
+&kp LCTRL  			&kp Z  &kp X      &kp C         &kp V  &kp B           &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+									     &kp ENTER  &mt LGUI TAB 	&mo 1  &mt LSHFT ENTER &kp RIGHT_ARROW  &kp SPACE    &mo 2  &mehta
+                                                             			 &kp ENTER
             >;
 
             label = "QWERTY";
