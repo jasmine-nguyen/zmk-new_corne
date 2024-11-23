@@ -104,8 +104,8 @@
 &kp ESC    			&kp Q  &kp W      &kp E         &kp R  &kp T           &kp UP_ARROW     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp CAPS				&kp A  &kp S      &kp D         &kp F  &kp G           &kp DOWN_ARROW   &kp H        &kp J  &kp K      &kp L    &td0      &td1
 &kp LCTRL  			&kp Z  &kp X      &kp C         &kp V  &kp B           &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-									     &kp ENTER  &mt LGUI TAB 	&mo 1  &mt LSHFT ENTER &kp RIGHT_ARROW  &kp SPACE    &mo 2  &LC(LS(LA))
-                                                             			 &kp ENTER
+									     &kp ENTER  &mt LGUI TAB 	&mo 1  &mt LSHFT ENTER &kp RIGHT_ARROW  &kp SPACE    &mo 2  &kp LC(LS(LA))
+                                                             			     &kp ENTER
             >;
 
             label = "QWERTY";
